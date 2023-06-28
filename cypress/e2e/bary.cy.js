@@ -3,7 +3,7 @@ const { pageRecherche } = require("../support/page_object_model/page_recherche")
 describe('bary spec', () => {
 
   beforeEach(() => {
-    cy.visit('https://demo.baryshop.com/')
+    cy.visit('/')
     cy.wait(2000)
   })
 
