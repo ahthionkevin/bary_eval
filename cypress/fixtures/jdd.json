@@ -1,0 +1,12 @@
+{
+    "lieuDepart" : "Aéroport de Bordeaux",
+    "lieuArrive" : "Aéroport de Paris",
+    "typeMarchandise" : "Marchandises générales",
+    "dimension" : {
+        "longueur": 120,
+        "largeur" : 100,
+        "hauteur" : 100,
+        "poids" : 100
+    },
+    "quantite" : 1
+}
