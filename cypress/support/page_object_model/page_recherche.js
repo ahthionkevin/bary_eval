@@ -12,6 +12,14 @@ class PageRecherche{
         cy.get('.pickupAddressAutofill').find('.pac-item').first().click({ force: true })
     }
 
+    choisir_lieu_depart_2(){
+        cy.get('.pickupAddressAutofill').find('.pac-item').then( items => {
+            const l = items.length
+            const item = items[Math.floor(Math.random() * l)]
+            item.click()
+        })
+    }
+
     /**
      * @param {String} lieu 
      */
@@ -24,6 +32,14 @@ class PageRecherche{
         cy.get('.deliveryAddressAutofill').find('.pac-item').first().click({ force: true })
     }
 
+    choisir_lieu_arrive_2(){
+        cy.get('.deliveryAddressAutofill').find('.pac-item').then( items => {
+            const l = items.length
+            const item = items[Math.floor(Math.random() * l)]
+            item.click()
+        })
+    }
+        
     cliquer_sur_le_bouton_recherche(){
         cy.get('[id-cypress="search-btn"]').click({ force: true })
     }
